@@ -19,3 +19,9 @@ Bingood is a customizable bingo game that brings a touch of retro nostalgia. Enj
 2. Customize the game settings, including the number of players and the size of the game board.
 
 3. Start playing and enjoy the retro bingo experience!
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
