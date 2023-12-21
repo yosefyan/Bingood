@@ -1,0 +1,49 @@
+body {
+  font-family: "Press Start 2P";
+}
+
+.diss {
+  transition: all, 2.5s;
+  height: 0 !important;
+  overflow: hidden !important;
+  opacity: 0;
+}
+.triangle {
+  transform: rotate(180deg);
+  transform-origin: top;
+  height: 0;
+  border-left: 10vmin solid transparent;
+  border-right: 10vmin solid transparent;
+  border-bottom: 30vh solid #3498db9f;
+  filter: blur(3px);
+  opacity: 1 !important;
+  p {
+    transform: rotate(180deg) translateY(-10vh);
+  }
+}
+.tShadow {
+  text-shadow: 1rem 2rem 1rem rgba(145, 142, 142, 0.418);
+}
+.titleBingo {
+  background: -webkit-linear-gradient(
+    rgba(128, 0, 128, 0.842),
+    rgba(0, 255, 255, 0.911)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.spaceship {
+  animation: spaceship 4.5s ease-in-out infinite;
+}
+
+@keyframes spaceship {
+  0% {
+    transform: translateY(5vh);
+  }
+  50% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(5vh);
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingood</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="./scripts/index.js" type="module" defer></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body
+    class="overflow-x-hidden xl:overflow-x-hidden bg-[url('./assets/arcadeBG.jpg')] bg-[length:100%_100%] h-[100vh]">
+    <div
+      class="overflow-x-hidden xl:overflow-x-hidden flex justify-evenly items-center flex-col box-border p-0 m-0 w-full h-[100vh] bg-no-repeat">
+      <div class="m-auto h-[25vh] my-0 flex justify-center items-center">
+        <h1
+          class="titleBingo text-center text-8xl tracking-widest tShadow font-black">
+          Bingood
+        </h1>
+      </div>
+      <form
+        class="flex justify-between items-center w-[100vw] m-auto my-0 xl:w-[60vw]"
+        action="#">
+        <div class="spaceship relative">
+          <div
+            class="w-[100%] h-[15vh] absolute flex justify-center up triangle m-auto bg-cyan items-start">
+            <p
+              id="valuePlayers"
+              class="absolute text-7xl underline decoration-pink-500 text-cyan-100/80 tShadow"></p>
+          </div>
+          <button
+            class="btn bg-cyan-500/50 shadow-lg shadow-cyan-500/50 text-4xl p-3 hover:scale-95 transition-all">
+            Players
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul
+            class="rounded-lg absolute diss h-fit text-center bg-cyan-300/25 w-full"
+            id="playerNum"></ul>
+        </div>
+        <div class="spaceship relative">
+          <div
+            class="w-[100%] h-[15vh] absolute flex justify-center up triangle m-auto bg-cyan items-start">
+            <p
+              id="valueSize"
+              class="absolute text-7xl underline decoration-pink-500 text-cyan-100/80 tShadow"></p>
+          </div>
+          <button
+            class="btn bg-cyan-500/50 shadow-lg shadow-cyan-500/50 text-4xl p-3 transition-all hover:scale-95">
+            Size <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <ul
+            class="rounded-lg opacity-1 absolute diss h-fit d-flex text-center bg-cyan-300/25 w-full"
+            id="boardSize"></ul>
+        </div>
+      </form>
+      <div class=" xl:w-[50vw] flex justify-center items-center bg-cyan-500/25 p-5">
+        <button/50
+          id="play"
+          class="w-full xl:w-[15vw] tShadow btn pointer-events-none bg-gray-700/50 shadow-lg shadow-cyan-600/50 text-4xl p-3 transition-all hover:scale-95 tracking-widest font-black">
+          PLAY
+        </button>
+      </div>
+    </div>
+    <div class="diss inGameContainer items-center flex-col xl:flex-row flex">
+      <div
+        class="flex flex-col justify-between w-[80vw] h-screen overflow-hidden">
+        <div class="top flex w-full h-[20vh]">
+          <div
+            class="overflow-y-hidden  w-[80vw] xl:w-[20vw] h-[20vh] flex justify-evenly flex-col items-center text-3xl shadow-lg shadow-blue-500/50 p-4 text-center">
+            <h2 class="m-3 titleBingo">The Number</h2>
+            <h4 class="titleBingo" id="rndNum">Loading...</h4>
+          </div>
+          <div
+            class="hidden xl:block overflow-y-hidden w-[80vw] h-[20vh] flex justify-evenly flex-col items-center text-3xl shadow-lg shadow-blue-500/50 p-4">
+            <h2 class="flex flex-col titleBingo text-center">History:</h2>
+            <h6 id="history" class="text-gray-500/50"></h6>
+          </div>
+        </div>
+        <div
+          id="tables"
+          class="xl:flex-row gap-3 flex-col h-[80vh] flex justify-evenly items-center">fafasfaffsdfdsfsfsdfds</div>
+      </div>
+      <div
+        id="settings"
+        class="bg-cyan-900/25 flex flex-col justify-evenly items-center w-full xl:w-[20vw] h-screen">
+        <h2 class="text-4xl tShadow titleBingo">SETTINGS</h2>
+      </div>
+    </div>
+  </body>
+</html>
