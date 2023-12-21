@@ -14,7 +14,7 @@ Bingood is a customizable bingo game that brings a touch of retro nostalgia. Enj
 
 ## How to Play
 
-1. Access the Bingood game on GitHub Pages: [Play Bingood](https://github.com/yosefyan.github.io/bingood).
+1. Access the Bingood game on GitHub Pages: [Play Bingood](https://yosefyan.github.io/Bingood).
 
 2. Customize the game settings, including the number of players and the size of the game board.
 
